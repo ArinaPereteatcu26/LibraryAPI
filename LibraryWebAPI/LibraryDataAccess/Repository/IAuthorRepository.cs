@@ -6,7 +6,7 @@ namespace LibraryDataAccess.Repository
 {
     public interface IAuthorRepository
     {
-        Task<List<Author>> GetAuthorsAsync();
+        Task<List<Author>> GetAuthorsAsync(int page, int nr);
         Task<Author?> GetAuthorByIdAsync(int id);
         Task<Author> CreateAuthorAsync(Author author);
         Task<Author> UpdateAuthorAsync(Author author);
